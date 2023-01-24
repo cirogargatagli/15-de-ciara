@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/15-de-ciara/static/css/main.073c9b0a.css",
-    "main.js": "/15-de-ciara/static/js/main.d6c11045.js",
+    "main.css": "/15-de-ciara/static/css/main.f1f51124.css",
+    "main.js": "/15-de-ciara/static/js/main.5cbd440b.js",
     "static/js/787.70f3c92a.chunk.js": "/15-de-ciara/static/js/787.70f3c92a.chunk.js",
+    "static/media/foto3.jpeg": "/15-de-ciara/static/media/foto3.7f1573db1355553c3e84.jpeg",
+    "static/media/foto1.png": "/15-de-ciara/static/media/foto1.95b1872fb4bfcda63ec7.png",
+    "static/media/foto4.jpeg": "/15-de-ciara/static/media/foto4.6d658e32e7183f2c4a77.jpeg",
+    "static/media/foto2.png": "/15-de-ciara/static/media/foto2.d5f26261c30a07039001.png",
+    "static/media/c.png": "/15-de-ciara/static/media/c.be7b22e5b106bf34e1dc.png",
     "static/media/logo.svg": "/15-de-ciara/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/15-de-ciara/index.html",
-    "main.073c9b0a.css.map": "/15-de-ciara/static/css/main.073c9b0a.css.map",
-    "main.d6c11045.js.map": "/15-de-ciara/static/js/main.d6c11045.js.map",
+    "main.f1f51124.css.map": "/15-de-ciara/static/css/main.f1f51124.css.map",
+    "main.5cbd440b.js.map": "/15-de-ciara/static/js/main.5cbd440b.js.map",
     "787.70f3c92a.chunk.js.map": "/15-de-ciara/static/js/787.70f3c92a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.d6c11045.js"
+    "static/css/main.f1f51124.css",
+    "static/js/main.5cbd440b.js"
   ]
 }
