@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&family=Send+Flowers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +18,64 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.title {
+  font-size: 150px;
+  line-height: normal;
+  text-align: center;
+  font-family: 'Arizonia', cursive;
+}
+
+.date {
+  font-size: 50px;
+  line-height: normal;
+  text-align: center;
+  font-weight: 100;
+  font-family: 'Indie Flower', cursive;
+}
+
+.background {
+  background-repeat: repeat;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://i.pinimg.com/564x/08/c0/d9/08c0d9df4e7cac912868a9083d415ae9.jpg");
+  min-width: 100vh;
+  min-height: 100vh;
+}
+
+.c {
+  max-width: 90%;
+  margin-left: 150%;
+}
+
+.text {
+  text-align: center;
+  font-size: 25px !important;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 50px;
+  }
+
+  .date {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 15px !important;
+  }
+
+  .c {
+    max-width: 100%;
+    margin-left: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .c {
+    margin-left: 20%;
+  }
 }
