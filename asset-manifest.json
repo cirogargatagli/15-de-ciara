@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/15-de-ciara/static/css/main.a1cf7972.css",
-    "main.js": "/15-de-ciara/static/js/main.77cbd334.js",
+    "main.js": "/15-de-ciara/static/js/main.dfeb6fd4.js",
     "static/js/787.70f3c92a.chunk.js": "/15-de-ciara/static/js/787.70f3c92a.chunk.js",
-    "static/media/Quevedo.mp3": "/15-de-ciara/static/media/Quevedo.819ab6ab9c6ade7d5a45.mp3",
-    "static/media/foto3.jpeg": "/15-de-ciara/static/media/foto3.7f1573db1355553c3e84.jpeg",
-    "static/media/foto1.png": "/15-de-ciara/static/media/foto1.95b1872fb4bfcda63ec7.png",
-    "static/media/foto4.jpeg": "/15-de-ciara/static/media/foto4.6d658e32e7183f2c4a77.jpeg",
-    "static/media/foto2.png": "/15-de-ciara/static/media/foto2.d5f26261c30a07039001.png",
+    "static/media/taylor.mp3": "/15-de-ciara/static/media/taylor.cf7c9de772a2a006cb4d.mp3",
+    "static/media/foto5.jpg": "/15-de-ciara/static/media/foto5.f1de594f7133478153e0.jpg",
+    "static/media/foto1.jpg": "/15-de-ciara/static/media/foto1.4f77ee28f4713de0ae83.jpg",
+    "static/media/foto2.jpg": "/15-de-ciara/static/media/foto2.be9b69ecddb005cfb748.jpg",
+    "static/media/foto3.jpg": "/15-de-ciara/static/media/foto3.ce9fcb51ace20dc5b39d.jpg",
     "static/media/c.png": "/15-de-ciara/static/media/c.be7b22e5b106bf34e1dc.png",
     "index.html": "/15-de-ciara/index.html",
     "main.a1cf7972.css.map": "/15-de-ciara/static/css/main.a1cf7972.css.map",
-    "main.77cbd334.js.map": "/15-de-ciara/static/js/main.77cbd334.js.map",
+    "main.dfeb6fd4.js.map": "/15-de-ciara/static/js/main.dfeb6fd4.js.map",
     "787.70f3c92a.chunk.js.map": "/15-de-ciara/static/js/787.70f3c92a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a1cf7972.css",
-    "static/js/main.77cbd334.js"
+    "static/js/main.dfeb6fd4.js"
   ]
 }
