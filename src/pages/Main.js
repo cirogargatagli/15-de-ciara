@@ -11,14 +11,16 @@ import {
 import React from "react";
 import Countdown from "react-countdown";
 import C from "../images/c.png";
-import Foto1 from "../images/foto1.png";
-import Foto2 from "../images/foto2.png";
-import Foto3 from "../images/foto3.jpeg";
-import Foto4 from "../images/foto4.jpeg";
+import Foto1 from "../images/foto1.jpg";
+import Foto2 from "../images/foto2.jpg";
+import Foto3 from "../images/foto3.jpg";
+import Foto4 from "../images/foto5.jpg";
 import { MusicNote, Place } from "@mui/icons-material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGift } from "@fortawesome/free-solid-svg-icons";
 import Reproductor from "../components/Audio";
+import CopyToClipboard from "react-copy-to-clipboard";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Main() {
   // Random component
@@ -32,6 +34,7 @@ export default function Main() {
       // Render a countdown
       return (
         <Grid item>
+          <Toaster />
           <Card
             sx={{ maxHeight: 300, maxWidth: 500, paddingX: 0.2, minWidth: 350 }}
           >
@@ -255,7 +258,7 @@ export default function Main() {
                       <br></br>Provincia de Buenos Aires
                       <br></br>
                       <br></br>
-                      21:30 hs a 06 hs
+                      21:30 hs a 05:30 hs
                     </Typography>
                   </CardContent>
                   <CardActions sx={{ width: 180, margin: "auto" }}>
@@ -389,18 +392,28 @@ export default function Main() {
                       Para mí lo más importante es poder compartir con vos el
                       gran día, pero en caso de que quieras hacerme un regalo
                       podrás hacerlo a través de un cofre que habrá en el salón
+                      o copiando mi alias con el botón
                     </Typography>
                   </CardContent>
-                  <CardActions sx={{ width: 70, margin: "auto" }}>
-                    <Fab
-                      style={{
-                        backgroundColor: "#fed75d",
-                      }}
-                      color="primary"
-                      aria-label="regalo"
+                  <CardActions sx={{ width: 170, margin: "auto" }}>
+                    <CopyToClipboard
+                      text="ciara12"
+                      onCopy={() => toast.success("¡Alias copiado!")}
                     >
-                      <FontAwesomeIcon icon={faGift} />
-                    </Fab>
+                      <Button
+                        style={{
+                          width: 170,
+                          height: 50,
+                          backgroundColor: "#fed75d",
+                          fontSize: 18,
+                          fontFamily: "Indie Flower, cursive;",
+                        }}
+                        variant="contained"
+                        startIcon={<FontAwesomeIcon icon={faGift} />}
+                      >
+                        CIARA12
+                      </Button>
+                    </CopyToClipboard>
                   </CardActions>
                 </Card>
               </Grid>
@@ -450,7 +463,7 @@ export default function Main() {
                       aria-label="regalo"
                       onClick={() =>
                         window.open(
-                          "https://open.spotify.com/playlist/1jQIx81lDBjt2LAm2NJ5Rj?si=7QzrQ8jaQuCU4-ENrA_8Pg",
+                          "https://open.spotify.com/playlist/6mWAV8LO6HWTTzlnSeE0Cp?si=PDd0p5yUTPK17ki4VJ9hug",
                           "_blank"
                         )
                       }

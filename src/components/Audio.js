@@ -1,6 +1,6 @@
 import React from "react";
 import AudioPlayer from "react-audio-player";
-import mp3 from "./Quevedo.mp3";
+import mp3 from "../audio/taylor.mp3";
 
 const Reproductor = () => {
   return (
