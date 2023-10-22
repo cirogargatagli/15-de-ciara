@@ -29,9 +29,6 @@
 }
 
 .audio-player-container {
-  position: fixed;
-  top: 10px; /* Ajusta la posición desde la parte superior según sea necesario */
-  right: 10px; /* Ajusta la posición desde la derecha según sea necesario */
   background-color: #f4f4f4;
   padding: 10px;
   border-radius: 10px;

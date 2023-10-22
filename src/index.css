@@ -59,6 +59,12 @@ code {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+._RZMQZ {
+  height: 0px !important;
+  min-height: 0px !important;
+  visibility: hidden !important;
+}
+
 @media (max-width: 600px) {
   .title {
     font-size: 50px;

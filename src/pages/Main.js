@@ -6,15 +6,17 @@ import {
   CardMedia,
   Fab,
   Grid,
+  TextField,
+  TextareaAutosize,
   Typography,
 } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import Countdown from "react-countdown";
 import C from "../images/c.png";
 import Foto1 from "../images/foto1.jpg";
-import Foto2 from "../images/foto2.jpg";
+import Foto2 from "../images/foto2.webm";
 import Foto3 from "../images/foto3.jpg";
-import Foto4 from "../images/foto5.jpg";
+import Foto4 from "../images/foto4.mov";
 import { MusicNote, Place } from "@mui/icons-material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGift } from "@fortawesome/free-solid-svg-icons";
@@ -23,6 +25,8 @@ import CopyToClipboard from "react-copy-to-clipboard";
 import toast, { Toaster } from "react-hot-toast";
 
 export default function Main() {
+  const [canciones, setCanciones] = useState("");
+
   // Random component
   const Finished = () => (
     <span style={{ color: "blue" }}>You are good to go!</span>
@@ -164,7 +168,6 @@ export default function Main() {
       className="background"
       spacing={3}
     >
-      <Reproductor />
       <Grid item>
         <Grid container direction="row" alignItems="center">
           <Grid item lg={2} md={4} xs={2} sm={4}>
@@ -205,6 +208,9 @@ export default function Main() {
         >
           <Countdown date={new Date(2023, 11, 30)} renderer={renderer} />
         </Grid>
+      </Grid>
+      <Grid item>
+        <Reproductor />
       </Grid>
       <Grid item>
         <Grid container direction="column" spacing={4}>
@@ -342,9 +348,13 @@ export default function Main() {
               <Grid item>
                 <Card sx={{ maxWidth: 345, paddingX: 0.2 }}>
                   <CardMedia
-                    sx={{ height: 450, width: 400 }}
-                    image={Foto3}
-                    title="Foto3"
+                    component="video"
+                    // sx={{ height: 450, width: 400 }}
+                    image={Foto2}
+                    title="Foto2"
+                    muted
+                    autoPlay
+                    loop
                   />
                 </Card>
               </Grid>
@@ -362,8 +372,8 @@ export default function Main() {
                 <Card sx={{ maxWidth: 345, paddingX: 0.2 }}>
                   <CardMedia
                     sx={{ height: 450, width: 400 }}
-                    image={Foto2}
-                    title="Foto2"
+                    image={Foto3}
+                    title="Foto3"
                   />
                 </Card>
               </Grid>
@@ -454,31 +464,29 @@ export default function Main() {
                       infaltables, las que quieres oír y bailar
                     </Typography>
                   </CardContent>
-                  <CardActions sx={{ width: 70, margin: "auto" }}>
-                    <Fab
-                      style={{
-                        backgroundColor: "#fed75d",
-                      }}
-                      color="primary"
-                      aria-label="regalo"
-                      onClick={() =>
-                        window.open(
-                          "https://open.spotify.com/playlist/6mWAV8LO6HWTTzlnSeE0Cp?si=PDd0p5yUTPK17ki4VJ9hug",
-                          "_blank"
-                        )
-                      }
-                    >
-                      <MusicNote />
-                    </Fab>
+                  <CardActions sx={{ width: 280, margin: "auto" }}>
+                    <TextField
+                      id="outlined-multiline-static"
+                      label="Canciones"
+                      multiline
+                      rows={2} // Número de filas en el área de texto
+                      variant="outlined"
+                      sx={{ width: "100%" }}
+                      onChange={(v) => setCanciones(v)}
+                    />
                   </CardActions>
                 </Card>
               </Grid>
               <Grid item>
                 <Card sx={{ maxWidth: 345, paddingX: 0.2 }}>
                   <CardMedia
-                    sx={{ height: 450, width: 400 }}
+                    component="video"
+                    // sx={{ height: 450, width: 400 }}
                     image={Foto4}
                     title="Foto4"
+                    muted
+                    autoPlay
+                    loop
                   />
                 </Card>
               </Grid>
@@ -557,7 +565,12 @@ export default function Main() {
                       variant="contained"
                       onClick={() =>
                         window.open(
-                          'whatsapp://send?text=¡Confirmo mi asistencia a tus 15!&phone="+encodeURIComponent(+54 9 11 2679-3540)',
+                          `whatsapp://send?text=¡Confirmo mi asistencia a tus 15!%0A${
+                            canciones
+                              ? "Las canciones que me gustaría escuchar en tu cumple son: " +
+                                canciones
+                              : ""
+                          }&phone="+encodeURIComponent(+54 9 11 2679-3540)`,
                           "_blank"
                         )
                       }
