@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/15-de-ciara/static/css/main.44ad992f.css",
-    "main.js": "/15-de-ciara/static/js/main.416bc69f.js",
+    "main.js": "/15-de-ciara/static/js/main.229fb9d4.js",
     "static/js/787.70f3c92a.chunk.js": "/15-de-ciara/static/js/787.70f3c92a.chunk.js",
     "static/media/fearless.mp3": "/15-de-ciara/static/media/fearless.af58dfc22f20b1807c64.mp3",
     "static/media/missAmericana.mp3": "/15-de-ciara/static/media/missAmericana.3f56ed4fcd4d3f78d359.mp3",
@@ -14,11 +14,11 @@
     "static/media/background.jpg": "/15-de-ciara/static/media/background.d04c393b39db9374b5f8.jpg",
     "index.html": "/15-de-ciara/index.html",
     "main.44ad992f.css.map": "/15-de-ciara/static/css/main.44ad992f.css.map",
-    "main.416bc69f.js.map": "/15-de-ciara/static/js/main.416bc69f.js.map",
+    "main.229fb9d4.js.map": "/15-de-ciara/static/js/main.229fb9d4.js.map",
     "787.70f3c92a.chunk.js.map": "/15-de-ciara/static/js/787.70f3c92a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.44ad992f.css",
-    "static/js/main.416bc69f.js"
+    "static/js/main.229fb9d4.js"
   ]
 }
