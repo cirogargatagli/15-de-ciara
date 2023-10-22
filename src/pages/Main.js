@@ -4,10 +4,8 @@ import {
   CardActions,
   CardContent,
   CardMedia,
-  Fab,
   Grid,
   TextField,
-  TextareaAutosize,
   Typography,
 } from "@mui/material";
 import React, { useState } from "react";
@@ -17,7 +15,7 @@ import Foto1 from "../images/foto1.jpg";
 import Foto2 from "../images/foto2.webm";
 import Foto3 from "../images/foto3.jpg";
 import Foto4 from "../images/foto4.mov";
-import { MusicNote, Place } from "@mui/icons-material";
+import { Place } from "@mui/icons-material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGift } from "@fortawesome/free-solid-svg-icons";
 import Reproductor from "../components/Audio";
@@ -209,7 +207,7 @@ export default function Main() {
           <Countdown date={new Date(2023, 11, 30)} renderer={renderer} />
         </Grid>
       </Grid>
-      <Grid item>
+      <Grid item sx={{ minWidth: 370 }}>
         <Reproductor />
       </Grid>
       <Grid item>
@@ -563,7 +561,7 @@ export default function Main() {
                         fontSize: 15,
                       }}
                       variant="contained"
-                      onClick={() =>
+                      onClick={() => {
                         window.open(
                           `whatsapp://send?text=¡Confirmo mi asistencia a tus 15!%0A${
                             canciones
@@ -572,8 +570,9 @@ export default function Main() {
                               : ""
                           }&phone="+encodeURIComponent(+54 9 11 2679-3540)`,
                           "_blank"
-                        )
-                      }
+                        );
+                        setCanciones(null);
+                      }}
                     >
                       ¡Confirmación!
                     </Button>

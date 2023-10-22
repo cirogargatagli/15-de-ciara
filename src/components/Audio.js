@@ -1,26 +1,27 @@
 import React from "react";
-import AudioPlayer from "react-audio-player";
-import mp3 from "../audio/taylor.mp3";
+import taylor from "../audio/taylor.mp3";
+import miss from "../audio/missAmericana.mp3";
+import Fearless from "../audio/fearless.mp3";
 import Player from "@madzadev/audio-player";
 import "@madzadev/audio-player/dist/index.css";
 
 const Reproductor = () => {
   const tracks = [
     {
-      url: "https://github.com/cirogargatagli/15-de-ciara/blob/master/src/audio/taylor.mp3",
+      url: taylor,
       title: "You belong with me",
       tags: ["house"],
     },
-    // {
-    //   url: "https://audioplayer.madza.dev/Madza-Late_Night_Drive.mp3",
-    //   title: "Miss Americana & The Hearbreak Prince",
-    //   tags: ["dnb"],
-    // },
-    // {
-    //   url: "https://audioplayer.madza.dev/Madza-Persistence.mp3",
-    //   title: "Fearless",
-    //   tags: ["dubstep"],
-    // },
+    {
+      url: miss,
+      title: "Miss Americana",
+      tags: ["dnb"],
+    },
+    {
+      url: Fearless,
+      title: "Fearless",
+      tags: ["dubstep"],
+    },
   ];
 
   const colors = `html {
