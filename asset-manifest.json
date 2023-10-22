@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/15-de-ciara/static/css/main.44ad992f.css",
-    "main.js": "/15-de-ciara/static/js/main.229fb9d4.js",
+    "main.js": "/15-de-ciara/static/js/main.49f71f27.js",
     "static/js/787.70f3c92a.chunk.js": "/15-de-ciara/static/js/787.70f3c92a.chunk.js",
     "static/media/fearless.mp3": "/15-de-ciara/static/media/fearless.af58dfc22f20b1807c64.mp3",
     "static/media/missAmericana.mp3": "/15-de-ciara/static/media/missAmericana.3f56ed4fcd4d3f78d359.mp3",
     "static/media/taylor.mp3": "/15-de-ciara/static/media/taylor.cf7c9de772a2a006cb4d.mp3",
     "static/media/foto4.mov": "/15-de-ciara/static/media/foto4.dae5474c6756cbc004ac.mov",
+    "static/media/foto2.mov": "/15-de-ciara/static/media/foto2.c001f4eb7505b6cfc281.mov",
     "static/media/foto1.jpg": "/15-de-ciara/static/media/foto1.4f77ee28f4713de0ae83.jpg",
     "static/media/foto3.jpg": "/15-de-ciara/static/media/foto3.ce9fcb51ace20dc5b39d.jpg",
-    "static/media/foto2.webm": "/15-de-ciara/static/media/foto2.8e3273de013843c90935.webm",
     "static/media/c.png": "/15-de-ciara/static/media/c.be7b22e5b106bf34e1dc.png",
     "static/media/background.jpg": "/15-de-ciara/static/media/background.d04c393b39db9374b5f8.jpg",
     "index.html": "/15-de-ciara/index.html",
     "main.44ad992f.css.map": "/15-de-ciara/static/css/main.44ad992f.css.map",
-    "main.229fb9d4.js.map": "/15-de-ciara/static/js/main.229fb9d4.js.map",
+    "main.49f71f27.js.map": "/15-de-ciara/static/js/main.49f71f27.js.map",
     "787.70f3c92a.chunk.js.map": "/15-de-ciara/static/js/787.70f3c92a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.44ad992f.css",
-    "static/js/main.229fb9d4.js"
+    "static/js/main.49f71f27.js"
   ]
 }
