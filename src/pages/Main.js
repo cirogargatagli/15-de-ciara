@@ -12,7 +12,7 @@ import React, { useState } from "react";
 import Countdown from "react-countdown";
 import C from "../images/c.png";
 import Foto1 from "../images/foto1.jpg";
-import Foto2 from "../images/foto2.webm";
+import Foto2 from "../images/foto2.mov";
 import Foto3 from "../images/foto3.jpg";
 import Foto4 from "../images/foto4.mov";
 import { Place } from "@mui/icons-material";
@@ -470,7 +470,8 @@ export default function Main() {
                       rows={2} // Número de filas en el área de texto
                       variant="outlined"
                       sx={{ width: "100%" }}
-                      onChange={(v) => setCanciones(v)}
+                      value={canciones}
+                      onChange={(e) => setCanciones(e.target.value)}
                     />
                   </CardActions>
                 </Card>
